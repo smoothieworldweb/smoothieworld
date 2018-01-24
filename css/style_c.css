@@ -1,0 +1,48 @@
+    article {
+        height:300px;
+        width: inherit;
+        margin-bottom: 1em;
+    }
+    article::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+    .item1 {
+        background-image: url("../images/cateringsandwich_10.jpeg");
+        height: inherit;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: left;
+    }
+    .item2 {
+        background-image: url("../images/threesmoothies.jpg");
+        height: inherit;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: right;
+    }
+    .description {
+        height: inherit;
+        width: 46%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: right;
+    }
+    .description-left {
+        height: inherit;
+        width: 46%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: left;
+        text-align: right;
+    }
+    #order {
+        height:auto;
+        width: inherit;
+        margin-bottom: 1em;
+        font-weight: 300;
+        text-align: center;
+    }
