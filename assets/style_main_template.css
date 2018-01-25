@@ -1,0 +1,198 @@
+/*
+FONTS:
+    Families |  font-family: 'Barlow', sans-serif;
+                font-family: 'Covered By Your Grace', cursive;
+    Weights |   font-weight: 300; (light)
+                font-weight: 300i; (light italic)
+                font-weight: 500; (semi-bold)
+                font-weight: 500i; (semi-bold italic)
+                font-weight: 600; (bold)
+                font-weight: 600i; (bold italic)
+    Suggested body/p, h1-h3 |  font-size: 1em; font-weight: 300; (body/p)
+            font-size: 3em; font-weight: 500; font-family: 'Covered By Your Grace', cursive; text-align: center; color: #f69054; (h1)
+            font-size: 2em; font-weight: 300;font-family: 'Covered By Your Grace', cursive; text-align: center; (h2) 
+            font-size: 1.5em; font-weight: 300i;font-family: 'Covered By Your Grace', cursive;text-align: center; (h3)
+    Suggested Use | body font weight at 300, bolds at 500, extra emphasis at 600.
+
+COLORS:
+    Current Pallete |   color: #cb3294; (magenta/purple)
+                        color: #4aa315; (apple green)
+                        color: #693cb; (light blue)
+                        color: #e04b39; (orange red)
+    Suggested (logo colors) |   color: #bb3754; (purple red)
+                                color: #8fa768; (light green)
+                                color: #efca8a; (light orange)
+                                color: #f69054; (dark orange)
+    Suggested body (on white bg) |    color: #535659; (dark grey)
+*/
+
+
+/* BODY FONTS AND COLOR */
+body, p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1em; 
+    font-weight: 300;
+    color: #535659;
+}
+h1 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 3em; 
+    font-weight: 500;
+    text-align: center;
+    color: #f69054;
+}
+h2 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 2em; 
+    font-weight: 300;
+    text-align: center;
+}
+h3 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 1.5em; 
+    font-weight: 300i;
+    text-align: center;
+}
+
+
+/* BODY FORMAT */
+body {
+    margin: 0 auto;
+    width: 940px;
+    padding: 20px 10px;
+    background: #fff;
+}
+
+/* HEADER AND NAV */
+figure {
+    width: 220px;
+    height: 100px;
+    margin: 0;
+    background: url("../images/Smoothie_World_Logo_2.png") no-repeat;
+    background-size: contain;
+    float: left;
+}
+nav {
+    width: 720px;
+    height: 100px;
+    margin-top: 10px;
+    text-align: right;
+    float: right;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+	color: #cb3294;
+	text-decoration: none;
+	letter-spacing: -0.01em;
+    font-weight: 500;
+}
+nav ul li a:hover {color:#4aa315;}
+header::after, footer::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+button {
+    background: #cb3294;
+    color: #fff;
+    border-style: none;
+    padding: 1em;
+    font-weight: 500;
+    font-size: 1em;
+}
+button:hover {
+    background: #4aa315;;
+    color: #fff;
+}
+
+
+/* SLIDESHOW/PAGE IMAGE */
+
+/* Image SlideShow CSS FOR Home */
+.slideshow-container{clear: both;}
+.mySlides {display: none}
+.slideshow-container img {
+    vertical-align: middle;
+    width: 940px;
+    height: 500px;
+    padding-bottom: 10px;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: lightgrey;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}           
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+
+/* SECTION id="body" - YOUR BODY CONTENT IN YOUR STYLE SHEET: CREATE NEW STYLE SHEET 'STYLE_YOURINITIALS.CSS' AND LINK ON YOUR PAGES ONLY */
+
+
+/* FOOTER, MISSION, AND SOCIAL MEDIA */
+
+#mission {
+    margin-bottom: 50px;
+    text-align: center;
+}
+footer {margin-top: 50px;}
+#navfooter {float: right;width: auto;}
+.social-media div {
+	float:left;
+	margin-right: 5px;
+}
+.social-media a {
+	display:block;
+	width: 50px;
+	height: 50px;
+	text-indent:-9999px;
+}
+.social-media div.one 	{background:url('../images/Social%20Icons.jpg') 0 0;}
+.social-media div.two 	{background:url('../images/Social%20Icons.jpg') -72px 0;}
+.social-media div.three {background:url('../images/Social%20Icons.jpg') -142px 0;}
+.social-media div.four 	{background:url('../images/Social%20Icons.jpg') -212px 0;}
+.social-media div.five 	{background:url('../images/Social%20Icons.jpg') -282px 0;}
+.social-media div.six 	{background:url('../images/Social%20Icons.jpg') -350px 0;}

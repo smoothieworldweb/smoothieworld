@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome To Smoothie World</title>
+    <link href="https://fonts.googleapis.com/css?family=Barlow:300,300i,500,500i,600,600i|Covered+By+Your+Grace" rel="stylesheet">
+    <link href="css/style_main.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+<!--HEADER AND NAV-->
+        <header>
+           <figure></figure>
+            <nav>
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="menu.html">Menu</a></li>
+                   <li><a href="clubsmoothie.html">Club Smoothie</a></li>
+                   <li><a href="nutrition.html">Nutrition</a></li>
+                   <li><a href="catering.html">Catering</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+<!--SLIDESHOW/PAGE IMAGE-->
+        
+        <section class="slideshow-container">
+            <div class="mySlides fade">  
+            <img src="images/Slider.jpg" style="width:100%"> 
+            </div>
+            
+            <div class="mySlides fade"> 
+            <img src="images/orange.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">  
+            <img src="images/multiplesmoothies.jpg" style="width:100%">  
+            </div>
+            
+            <div class="mySlides fade">  
+            <img src="images/threesmoothies.jpg" style="width:100%">  
+            </div>
+            
+            <div class="mySlides fade">  
+            <img src="images/strawberry.png" style="width:100%">  
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
+           
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+        
+<!--BODY: DUPLICATE THIS PAGE, RENAME, AND PLACE CONTENT HERE-->
+        
+        <section id="body">
+            
+        </section>
+        
+<!--FOOTER, MISSION, AND SOCIAL MEDIA-->
+        
+        <footer>
+            <div id="mission">
+                <h1>Our Mission</h1>
+                <p>To help make people aware of how important it is to have a healthy lifestyle and to put the right foods in our bodies.</p>
+            </div>           
+           
+            <div class="social-media">
+                <div class="one"><a href="http://www.facebook.com">Smoothie world on Facebook</a></div>
+                <div class="two"><a href="http://www.twitter.com">Smoothie world on twitter</a></div>
+                <div class="three"><a href="http://www.rss.com">Smoothie world on Feed</a></div>
+                <div class="four"><a href="http://www.youtube.com">Smoothie world on youtube</a></div>
+                <div class="five"><a href="http://www.gmail.com">Smoothie world on gmail</a></div>
+                <div class="six"><a href="http://www.linkedin.com">Smoothie world on linkedin</a></div>                
+            </div>
+            
+            <nav id="navfooter">
+				<ul>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="career.html">Careers</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="sitemap.html">Site map</a></li>
+				</ul>
+			</nav>
+        </footer>
+    </main>
+</body>
+</html>
