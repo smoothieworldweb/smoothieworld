@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Smoothie World</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,300i,500,500i,600,600i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/mainstyle.css">
+  <link rel="stylesheet" href="css/r_style.css">
+  <link rel="stylesheet" href="css/print.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/bananas.jpg">
+</head>
+
+<body>
+   <header>
+       <section class="print">
+         <p>
+             <em>CONTACT US PAGE 8/10</em>
+         </p>
+          <figure class="printlogo"></figure>
+          <strong>Our Mission</strong>
+            <p>To help make people aware of how important it is<br> to have a healthy lifestyle and to put the right <br>foods in our bodies.</p>
+            
+           <p>We offer healthy fresh fruit smoothies,<br> sandwiches, wraps, salads, ice cream,<br> shakes, and more.</p>
+           
+            <address>
+               <p>Address: 2800 W Pinhook Rd, Ste 7,<br> Lafayette, Louisiana, 70508.<br> 
+                Call (337) 267-4440</p>
+           </address> 
+           
+           <strong>Contact us by phone, our website email, or by filling out our online form.</strong>
+       </section>
+       
+        <section class="container">
+            <section class="row">
+                <a href="index.html"><figure class="one-half column fade"></figure></a>
+                <nav class="one-half column">
+                    <ul class="navigation">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="menu.html">Menu</a>
+                        </li>
+                        <li>
+                            <a href="clubsmoothie.html">Club Smoothie</a>
+                        </li>
+                        <li>
+                            <a href="nutrition.html">Nutrition</a>
+                        </li>
+                        <li>
+                            <a href="catering.html">Catering</a>
+                        </li>
+                    </ul>
+                    
+                    <i class="fa"><button class="fadefast" id="popupburger">&#xf0c9;</button></i>
+                    <nav id="navpopup">
+                       <button id="popupclose" class="close fadefast">Close</button>
+                        <ul>
+                            <li>
+                            <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                            <a href="menu.html">Menu</a>
+                            </li>
+                            <li>
+                            <a href="clubsmoothie.html">Club Smoothie</a>
+                            </li>
+                            <li>
+                            <a href="nutrition.html">Nutrition</a>
+                            </li>
+                            <li>
+                            <a href="catering.html">Catering</a>
+                            </li>
+                            <li>
+                            <a href="aboutus.html">About Us</a>
+                            </li>
+                            <li>
+                            <a href="careers.html">Careers</a>
+                            </li>
+                            <li>
+                            <a href="contactus.html">Contact Us</a>
+                            </li>
+                            <li>
+                            <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li>
+                            <a href="sitemap.html">Site Map</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+            </section>
+        </section>
+   </header>
+   
+        <figure class="fade contactusimg"></figure>
+   
+   <main class="container">
+          <h1>Contact Us Today: We're Here For You</h1>
+           <section class="row">
+            <div class="eight columns">
+                <form action="example.php" method="post">
+                   <h2>Contact Info</h2>
+                    <div>
+                        <label>Name:</label> 
+                        <input type="text" name="name" maxlength="50" required>
+                    </div>
+                    <div>             
+                        <label>Phone Number:</label> 
+                        <input type="text" name="phone" maxlength="50" required>
+                    </div>
+                    <div>             
+                        <label>Email:</label> 
+                        <input type="email" name="email" maxlength="50" required>
+                    </div>
+                    
+                    <h2>Reason For Contacting Us</h2>
+                    <div>
+                        <input type="checkbox">Recent Restaurant Visit
+                    </div>
+
+                    <div>
+                        <input type="checkbox"> Questions About Products
+                    </div>
+                    <div>
+                        <input type="checkbox">Franchise Opportunity
+                    </div>
+                    <div>             
+                        <label>Comments:</label> 
+                        <textarea name="comment" id="textorder" cols="30" rows="10"></textarea>
+                    </div>
+                    
+                     <!--SATISFACTION-->
+                    <label>Overall, how satisfied were you with your visit?</label>
+                    <div id="contactinfra1"><input type="radio" name="infrastructure" value="Mac">Very Satisfied</div>
+
+                    <div id="contactinfra2"><input type="radio" name="infrastructure" value="Linux">Satisfied</div>
+
+                    <div id="contactinfra3"><input type="radio" name="infrastructure" value="Unix">Neutral</div>
+
+                    <div id="contactinfra4"><input type="radio" name="infrastructure" value="Windows">Unsatisfied</div>
+
+                    <div id="contactinfra5"><input type="radio" name="infrastructure" value="Windows">Very Unsatisfied</div>
+
+                    <div id="contactinfra6"><input type="radio" name="infrastructure" value="Windows">N/A</div>
+
+    <!--STORE VISITS -->
+                    <label>How often to visit Smoothie World?</label>
+                    <select id="contactbox1" name="companysize">
+                        <option value="1-10">Everyday</option>    
+                        <option value="11-100">Several times a week</option>
+                        <option value="101-1000">Several times a month</option> 
+                        <option value="More than 100">About once a month</option>
+                        <option value="More than 200">Less than once a month</option>
+                        <option value="More than 300">This is my first time here</option>
+                    </select> 
+
+    <!--HOW DID YOU HEAR ABOUT US -->    
+                    <label>How did you hear about us?</label>
+                    <select id="contactbox2" name="hearaboutus" multiple>
+                        <option value="Radio Ad">Radio Ad</option>
+                        <option value="Television Ad">Television Ad</option>
+                        <option value="Magazine Ad">Magazine Ad</option>
+                        <option value="Internet Search">Interet Search</option>
+                        <option value="Word of Mouth">Word of Mouth</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    
+                    <div id="submit">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <div class="four columns">
+              <h2>Testmonials</h2>
+               <button class="accordion">Stephanie Broussard</button>
+                 <div class="panel">
+                     <p><em>"I just wanted to say that from the service, wraps and smoothies. Smoothie World is first class!"</em></p>
+                 </div>
+                 
+            <button class="accordion">Joseph Dwyer</button>
+                <div class="panel">
+                    <p><em>"I'm so glad my buddy recommend this Smoothie World. This place is so much more than a smoothie shop. They have it all!</em></p>
+                </div>
+                
+            <button class="accordion">David Mendoza</button>
+               <div class="panel">
+                   <p><em>"Fast, affortable and healthy! Smoothie World has become my favorite place for lunch!"</em></p>
+               </div>
+            </div>
+        </section>
+   </main>
+   
+   <footer>
+      <section class="container">
+          <div class="row">
+              <div class="one-third column">
+                  <h1>Our Mission</h1>
+                  <p>To help make people aware of how important it is to have a healthy lifestyle and to put the right foods in our bodies.</p> <a href="aboutus.html"><button>LEARN MORE</button></a>
+              </div>
+              <nav class="two-thirds column">
+                  <ul class="navigation">
+                      <li>
+                          <a href="aboutus.html">About Us</a>
+                      </li>
+                      <li>
+                          <a href="careers.html">Careers</a>
+                      </li>
+                      <li>
+                          <a href="contactus.html">Contact Us</a>
+                      </li>
+                      <li>
+                          <a href="gallery.html">Gallery</a>
+                      </li>
+                      <li>
+                          <a href="sitemap.html">Site Map</a>
+                      </li>
+                  </ul>
+                  
+                  
+                  <nav class="social-media">
+                    <div class="one"><a href="http://www.facebook.com"></a></div>
+                    <div class="two"><a href="http://www.twitter.com"></a></div>
+                    <div class="three"><a href="http://www.rss.com"></a></div>
+                    <div class="four"><a href="http://www.youtube.com"></a></div>
+                    <div class="five"><a href="http://www.gmail.com"></a></div>
+                    <div class="six"><a href="http://www.linkedin.com"></a></div> 
+                </nav>
+              </nav>
+          </div>
+      </section>
+   </footer> 
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/hideshownavjqueryplugin.js"></script>
+   <script src="js/testimonialaccordian.js"></script>  
+</body>
+</html>
