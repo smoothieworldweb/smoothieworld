@@ -1,0 +1,282 @@
+/* BODY FONTS AND COLOR */
+.print {display: none;}
+body, p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 300;
+    color: #535659;
+}
+h1 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 3em; 
+    font-weight: 500;
+    text-align: center;
+    color: #f69054;
+    padding-top: 1em;
+}
+h2 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 2em; 
+    font-weight: 300;
+    text-align: center;
+    padding-top: 1em;
+}
+h3 {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 1.5em; 
+    font-weight: 300i;
+    text-align: center;
+    padding-top: 1em;
+}
+button {
+    background: #cb3294;
+    color: #fff;
+    border: none;
+    transition: 0.4s;
+}
+button:hover {color: #535659;background: #fff;}
+input, label, textarea, select {
+    width: 100%;
+    color: #cb3294;
+    transition: 0.4s;
+}
+input[type="submit"] {
+    background: #cb3294;
+    color: #fff;
+    border: none;
+}
+input[type="submit"]:hover {
+    color: #535659;
+    background: #fff;   
+}
+
+input[type="text"]:required,
+input[type="email"]:required, #textorder {border-color: #e04b39;}
+input[type="text"]:valid,
+input[type="email"]:valid, #textorder {border-color: #8fa768;}
+
+
+/* BODY SEMANTICS */
+body {
+    margin: 0;
+    font-weight: 300;
+}
+header, main, section, footer {padding: 1em;}
+header {
+    background: #fff;
+    height: auto;
+    border-bottom: 1px solid #eee;
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+main {
+    background: #fff;
+}
+footer {
+    height: 55vh;
+    background: url("../images/threesmoothies.jpg") no-repeat;
+    background-size: 40%;
+    background-position: bottom;
+    background-attachment: fixed;
+    padding-bottom: 5em;
+}
+footer section.container {padding-top: 5em;}
+
+
+/* LOGO AND NAV */
+figure {
+    margin: 0;
+    background: url("../images/Smoothie_World_Logo_2.png") no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 70px;
+}
+nav {
+    padding-top: 2em;
+}
+nav a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: #f69054;
+}
+nav a:hover {
+    color: #efca8a;
+}
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+
+/* FEATURED SLIDER */
+.slideshow-container {
+    height: 39vw;
+    padding: 0;
+}
+
+/* GALLERY IMAGES */
+#image1 {
+    background: url("../images/Slider.jpg") no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: inherit;
+}
+#image2 {
+    background: url("../images/DollarCouponSmoothie.jpg") no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: inherit;
+}
+#image3 {
+    background: url("../images/bananas.jpg") no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: inherit;
+}
+
+/* next/prev buttons */
+.prev, .next {
+    width: auto;
+    padding: 1em;
+    color: #535659;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 3px 3px 3px 3px;
+    text-align: center;
+    cursor: pointer;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(203,50,148,1);
+    color: #fff;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+.fadefast {
+    -webkit-animation-name: fadefast;
+    -webkit-animation-duration: .8s;
+    animation-name: fadefast;
+    animation-duration: .8s;
+}
+@-webkit-keyframes fadefast {
+    from {opacity: .6} 
+    to {opacity: 1}
+}
+@keyframes fadefast {
+    from {opacity: .6} 
+    to {opacity: 1}
+}
+
+/* FRONT PAGE BODY */
+.frontlinks {text-align: center;margin-top: 3em;}
+.frontlinks button {margin-bottom: 3em;}
+.couponsection {
+    background: #8fa768;
+    height: 30vh;
+}
+
+/* SOCIAL MEDIA */
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+}
+.social-media a {
+    background: url("../images/Social%20Icons.jpg");
+    width: 43px;
+    height: 44px;
+    display: block;
+}
+.social-media div.one a {background-position: -6px 48px;}
+.social-media div.two a {background-position: -75px 48px;}
+.social-media div.three a {background-position: -144px 48px;}
+.social-media div.four a {background-position: -213px 48px;}
+.social-media div.five a {background-position: -283px 48px;}
+.social-media div.six a {background-position: -352px 48px;}
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 961px) {
+    .fa > button, #navpopup, #navpopup ul, .close {
+        display: none;
+    }
+}
+@media screen and (max-width: 960px) {
+    header {
+        padding-bottom: 2.5em;
+    }
+    nav.navigation, ul.navigation {
+        display: none;
+    }
+    #navpopup {
+        background: #fff;
+        width: 200px;
+        height: 55vh;
+        position: absolute;
+        right: -12vw;
+        top: 0;
+        z-index: 1000;
+        padding: 2em;
+        display: none;
+    }
+    #navpopup ul {
+        display: block;
+        text-align: center;
+    }
+    .fa > button {
+        position: absolute;
+        right: 0;
+        top: 3.5em;
+    }
+    .close {
+        width: 100%;
+    }
+    #navpopupnone {
+        display: none;
+    }
+    .slideshow-container {
+        height: 50vw;
+    }
+}
+@media screen and (max-width: 549px) {
+    .fa > button {
+        position: absolute;
+        right: 0;
+        top: 10em;
+        width: 100%;
+        height: 3em;
+    }
+    #navpopup {
+        background: #fff;
+        width: 89vw;
+        height: 100vh;
+        position: absolute;
+        left: -10vw;
+        z-index: 1000;
+        padding: 2em;
+    }
+    #navpopup ul {
+        display: block;
+        text-align: center;
+    }
+    .menuheaderimg, .sitemapimg, .careerimg, .aboutimg, .nutritionimg, .cateringimg, .clubsmoothieimg, .contactusimg {
+        display: none;
+    }
+    footer {background: none;}
+    .slideshow-container {
+        height: 70vw;
+        padding: 0;
+    }
+}

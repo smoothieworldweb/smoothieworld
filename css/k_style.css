@@ -1,0 +1,53 @@
+/* MENU PAGE*/
+.menuheaderimg {
+    background: url("../images/menuheader.jpeg") no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
+.menu-restaurant {text-align: center;}
+video {
+    width: 100%;
+}
+.menufruitimg1 {
+    background: url("../images/images.jpg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
+}
+.menufruitimg2 {
+    background: url("../images/cateringsandwich_10.jpeg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
+}
+.menufruitimg3 {
+    background: url("../images/cateringplatter_8.jpg") no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
+}
+.menufruitimg4 {
+    background: url("../images/sandwichpic.png") no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
+}
+.menufruitimg5 {
+    background: url("../images/shakes.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
+}
+.menufruitimg6 {
+    background: url("../images/dd_espresso.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    width: 100%;
+}

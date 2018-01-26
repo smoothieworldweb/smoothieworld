@@ -1,0 +1,37 @@
+/* ABOUT */
+.aboutimg {
+    background: url("../images/aboutpic.jpg") no-repeat center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+.logo {
+    background: url("../images/Smoothie_World_Logo_2.png") no-repeat center;
+    background-size: contain;
+    width: 100%;
+}
+address {text-align: center;}
+.emailus {width: 100%;}
+
+/* CAREERS */
+.careerimg {
+    background: url("../images/youngcookred.jpeg") no-repeat center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+.fancychef {
+    background: url("../images/cheffancy.jpeg") no-repeat center;
+    background-size: contain;
+    width: 100%;
+    height: 300px;
+}
+
+/* SITE MAP */
+.sitemapimg {
+    background: url("../images/bananas.jpg") no-repeat center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+.sitemap {text-align: center;}

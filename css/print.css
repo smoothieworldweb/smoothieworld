@@ -1,0 +1,16 @@
+@media print {
+    .print {display: block;}
+    .printlogo {
+        background: url("../images/Smoothie_World_Logo_2.png") no-repeat;
+        width: 100pc;
+        height: 100px;
+    }
+    header, header::before {
+        display: block;
+        content: "Welcome To Smoothie World";
+    }
+    .slideshow-container, .slideshow-container ~ section, main, nav, figure, footer  {
+        display: none;
+    }
+    address {text-align: left;}
+}
