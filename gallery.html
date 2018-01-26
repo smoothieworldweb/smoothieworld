@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Smoothie World</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,300i,500,500i,600,600i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/mainstyle.css">
+  <link rel="stylesheet" href="css/r_style.css">
+  <link rel="stylesheet" href="css/print.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/bananas.jpg">
+</head>
+
+<body>
+   <header>
+       <section class="print">
+         <p>
+             <em>GALLERY PAGE 9/10</em>
+         </p>
+          <figure class="printlogo"></figure>
+          <strong>Our Mission</strong>
+            <p>To help make people aware of how important it is<br> to have a healthy lifestyle and to put the right <br>foods in our bodies.</p>
+            
+           <p>We offer healthy fresh fruit smoothies,<br> sandwiches, wraps, salads, ice cream,<br> shakes, and more.</p> 
+           
+           <strong>View our restaurant online on our gallary page.</strong>
+       </section>
+       
+        <section class="container">
+            <section class="row">
+                <a href="index.html"><figure class="one-half column fade"></figure></a>
+                <nav class="one-half column">
+                    <ul class="navigation">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="menu.html">Menu</a>
+                        </li>
+                        <li>
+                            <a href="clubsmoothie.html">Club Smoothie</a>
+                        </li>
+                        <li>
+                            <a href="nutrition.html">Nutrition</a>
+                        </li>
+                        <li>
+                            <a href="catering.html">Catering</a>
+                        </li>
+                    </ul>
+                    
+                    <i class="fa"><button class="fadefast" id="popupburger">&#xf0c9;</button></i>
+                    <nav id="navpopup">
+                       <button id="popupclose" class="close fadefast">Close</button>
+                        <ul>
+                            <li>
+                            <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                            <a href="menu.html">Menu</a>
+                            </li>
+                            <li>
+                            <a href="clubsmoothie.html">Club Smoothie</a>
+                            </li>
+                            <li>
+                            <a href="nutrition.html">Nutrition</a>
+                            </li>
+                            <li>
+                            <a href="catering.html">Catering</a>
+                            </li>
+                            <li>
+                            <a href="aboutus.html">About Us</a>
+                            </li>
+                            <li>
+                            <a href="careers.html">Careers</a>
+                            </li>
+                            <li>
+                            <a href="contactus.html">Contact Us</a>
+                            </li>
+                            <li>
+                            <a href="gallery.html">Gallery</a>
+                            </li>
+                            <li>
+                            <a href="sitemap.html">Site Map</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+            </section>
+        </section>
+   </header>
+   
+   <main class="container">
+           <section class="row">
+                <div class="twelve columns">
+                    <!--GALLERY-->
+                    <section class="gallerycontainer">
+                        <figure class="gallerymySlides fade" id="galleryimg1"></figure>
+                        <figure class="gallerymySlides fade" id="galleryimg2"></figure>
+                        <figure class="gallerymySlides fade" id="galleryimg3"></figure>
+                        <figure class="gallerymySlides fade" id="galleryimg4"></figure>
+                        <figure class="gallerymySlides fade" id="galleryimg5"></figure>
+                        <figure class="gallerymySlides fade" id="galleryimg6"></figure>
+                    </section>
+
+                    <!--THUMBNAILS-->
+                    <div class="gallerycaption-container">
+                        <p id="gallerycaption"></p>
+                    </div>
+
+                    <div class="gallerycolumn">
+                         <div class="thumbnailcontainer">
+                             <figure class="cursor gallerydemo thumbnail1" id="Welcome to Smoothie World" onclick="currentSlide(1)"><figcaption id="gallerydemo"></figcaption></figure>
+                         </div>
+
+                         <div class="thumbnailcontainer">
+                             <figure class="gallerydemo cursor thumbnail2" id="We're here to make you live healthier" onclick="currentSlide(2)"></figure>
+                         </div>
+
+                         <div class="thumbnailcontainer">
+                             <figure class="gallerydemo cursor thumbnail3" id="Our fruit is delievered daily for freshness" onclick="currentSlide(3)"></figure>
+                         </div>
+
+                         <div class="thumbnailcontainer">
+                             <figure class="gallerydemo cursor thumbnail4" id="Relax, study, or simply be" onclick="currentSlide(4)"></figure>
+                         </div>
+
+                         <div class="thumbnailcontainer">
+                             <figure class="gallerydemo cursor thumbnail5" id="We have something for everyone" onclick="currentSlide(5)"></figure>
+                         </div>
+
+                         <div class="thumbnailcontainer">
+                             <figure class="gallerydemo cursor thumbnail6" id="What's your flavor?" onclick="currentSlide(6)"></figure>
+                         </div>
+                    </div>
+            </div>
+        </section>
+   </main>
+   
+   <footer>
+      <section class="container">
+          <div class="row">
+              <div class="one-third column">
+                  <h1>Our Mission</h1>
+                  <p>To help make people aware of how important it is to have a healthy lifestyle and to put the right foods in our bodies.</p> <a href="aboutus.html"><button>LEARN MORE</button></a>
+              </div>
+              <nav class="two-thirds column">
+                  <ul class="navigation">
+                      <li>
+                          <a href="aboutus.html">About Us</a>
+                      </li>
+                      <li>
+                          <a href="careers.html">Careers</a>
+                      </li>
+                      <li>
+                          <a href="contactus.html">Contact Us</a>
+                      </li>
+                      <li>
+                          <a href="gallery.html">Gallery</a>
+                      </li>
+                      <li>
+                          <a href="sitemap.html">Site Map</a>
+                      </li>
+                  </ul>
+                  
+                  
+                  <nav class="social-media">
+                    <div class="one"><a href="http://www.facebook.com"></a></div>
+                    <div class="two"><a href="http://www.twitter.com"></a></div>
+                    <div class="three"><a href="http://www.rss.com"></a></div>
+                    <div class="four"><a href="http://www.youtube.com"></a></div>
+                    <div class="five"><a href="http://www.gmail.com"></a></div>
+                    <div class="six"><a href="http://www.linkedin.com"></a></div> 
+                </nav>
+              </nav>
+          </div>
+      </section>
+   </footer>
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/hideshownavjqueryplugin.js"></script>
+   <script src="js/galleryplugin.js"></script>    
+</body>
+</html>
